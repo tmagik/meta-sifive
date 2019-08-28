@@ -4,7 +4,7 @@
 DIR="build"
 MACHINE="freedom-u540"
 CONFFILE="conf/auto.conf"
-BITBAKEIMAGE="demo-coreip-cli"
+BITBAKEIMAGE="sifive-test"
 
 # clean up the output dir
 #echo "Cleaning build dir"
@@ -53,6 +53,8 @@ bitbake-layers add-layer ../meta-openembedded/meta-python
 bitbake-layers add-layer ../meta-openembedded/meta-multimedia
 bitbake-layers add-layer ../meta-openembedded/meta-networking
 bitbake-layers add-layer ../meta-riscv
+bitbake-layers add-layer ../meta-riscv
+bitbake-layers add-layer ../meta-games
 bitbake-layers add-layer ../meta-sifive
 
 # fix the configuration
